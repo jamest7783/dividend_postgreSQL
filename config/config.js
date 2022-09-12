@@ -1,11 +1,11 @@
 require('dotenv').config()
 module.exports = {
   development: {
-    database: '<Your Dev Database>',
+    database: 'dividends_sql',
     dialect: 'postgres'
   },
   test: {
-    database: '<Your Database Test Name>',
+    database: 'sequelize_test',
     dialect: 'postgres'
   },
   production: {
