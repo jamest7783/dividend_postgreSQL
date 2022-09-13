@@ -31,7 +31,7 @@ const readPortfolioPositions=async (req,res)=>{
         for(let i=0;i<orders.length;i++){
             equity=await Equity.findByPk(orders[i].equityId)
             if(!positions[equity.ticker]){
-                tkrArray.push(equity.ticker)
+                tkrArray.push(equity.ticker )
                 positions[equity.ticker]={
                     numShares:orders[i].numShares,
                     avgPricePerShare:orders[i].pricePerShare,
