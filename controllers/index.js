@@ -6,6 +6,6 @@ const quote=require('./quote')
 module.exports={
     equity,
     order,
-    portfolio,
+    portfolio ,
     quote
 }
