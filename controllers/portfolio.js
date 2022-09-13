@@ -34,7 +34,7 @@ const readPortfolioPositions=async (req,res)=>{
                 tkrArray.push(equity.ticker )
                 positions[equity.ticker]={
                     numShares:orders[i].numShares,
-                    avgPricePerShare:orders[i].pricePerShare,
+                    avgPricePerShare:orders[i].pricePerShare ,
                     currentPrice:0
                 }
             }else{
