@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(logger('dev'))
 
-const PORTSQL=process.env.PORT||3002
+const PORTSQL=3002
 const routes=require('./routes')
 
 app.get('/sql',(req,res)=>res.json({message:'SQL server hit!'}))
